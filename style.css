@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
 
 body, html{
 	font-family: 'Open Sans', sans-serif;
@@ -42,7 +43,12 @@ h4{
 }
 
 h1{
-	font-weight: bold;
+	font-weight: 800;
+	font-size: 50px;
+}
+
+h2{
+	font-weight: 800;
 	font-size: 50px;
 }
 
@@ -95,18 +101,74 @@ a.cta.alt, button.cta.alt{
 	position: absolute; bottom: 20px; right: 59px;
 }
 
+nav{
+	height: 100px;
+	background-color: white;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
+	position: sticky;
+	top: 0;
+}
+
+nav .logo{
+	display: block;
+	width: 300px;
+	height: 40px;
+	position: absolute; top: 50%; left: 0;
+	margin-top: -30px;
+	margin-left: 30px;
+	text-decoration: none;
+	background-size: 100%;
+	font-weight: bold;
+	font-size: 50px;
+	font-family: 'Praise', cursive;
+	color: darkslateblue;
+}
+
+nav .logo:active{
+	color: darkslateblue;
+}
+
+nav ul{
+	margin: 0 20px 0 0;
+	padding: 0;
+}
+
+nav ul li{
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: right;
+}
+
+nav ul li a{
+	display: block;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #111111;
+	text-decoration: none;
+	padding: 35px 10px;
+	line-height: 30px;
+}
+
+.more-info{
+	text-align: center;
+}
+
+p{
+	font-weight: bold;
+	font-size: 22px;
+	margin: 30px 0;
+}
+
 /*
 
-<div class="chaster-banner">
-		<div class="wrapper">
-			<h4>El Bichu que ya conoces presenta</h4>
-			<h1>La Banda<br>son los músicos más guapos<br>del mundo</h1>
-			<h3>Son El Chin, El Chas y El Chuk.<br>Los mejores y más queríos</h3>
-			<a class="cta alt" href="#more-info">Saber más</a>
-		</div>
-		<div class="character1"></div>
-		<div class="character2"></div>
-		<div class="character3"></div>
-	</div>
+<div class="more-info" id="more-info">
+	<h1>Apúntate a nuestro club de fanes</h1>
+	<p>Todes les semanes damos <span class="highlight">una fiesta</span> (mínimo). Si quies unite, apúntate al club de fanes. A los que se apunten mandámosyos un kas limón y fotos de la fiesta. ¿A que mola?</p>
+	<button class="cta">¡Apúntame!</button>
+</div>
 
 */
