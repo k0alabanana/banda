@@ -25,7 +25,7 @@
 	<nav>
 		<a href="#" class="logo">La Banda</a>
 		<ul>
-			<li><a href="#">Apúntate</a></li>
+			<li><a href="javascript:()" onclick="showPopup();">Apúntate</a></li>
 			<li><a href="#story">La Historia</a></li>
 			<li><a href="#more-info">Más Info</a></li>
 		</ul>
@@ -35,7 +35,7 @@
 		<div class="wrapper">
 			<h2>Apúntate a nuestro club de fanes</h2>
 			<p>Todes les semanes damos <span class="highlight">una fiesta</span> (mínimo). Si quies unite, apúntate al club de fanes. A los que se apunten mandámosyos un kas limón y fotos de la fiesta. ¿A que mola?</p>
-			<button class="cta">¡Apúntame!</button>
+			<button class="cta" onclick="showPopup();">¡Apúntame!</button>
 		</div>
 	</div>
 	<div id="story"></div>
@@ -77,33 +77,37 @@
 		<p>Hecho por El Bichu &copy; porque puede</p>
 	</footer>
 
-	<div class="popup">
+	<div class="popup" id="popup">
 		<div class="blanket"></div>
 		<div class="content">
-			<h2>Quítenmelo de les manos</h2>
+			<h2>Rellénalo bien, bichín</h2>
 			<form action="">
-				<div class="item">
-					<label>El tu nombre</label>
-					<input type="text" placeholder="Chaster" value="Jesusito">
+				<div class="row">
+					<div class="item">
+						<label>El tu nombre</label>
+						<input type="text" placeholder="Chaster" value="Jesusito">
+					</div>
+					<div class="item">
+						<label>El tu apellidu</label>
+						<input type="text" placeholder="Pasteles">
+					</div>
 				</div>
-				<div class="item">
-					<label>El tu apellidu</label>
-					<input type="text" placeholder="Pasteles">
-				</div>
-				<div class="item">
-					<label>Comida favorita</label>
-					<input type="text" placeholder="Piensín con salchiches">
-				</div>
-				<div class="item">
-					<label>Instrumento favoritu</label>
-					<input type="text" placeholder="Cajina de música">
+				<div class="row">
+					<div class="item">
+						<label>Comida favorita</label>
+						<input type="text" placeholder="Piensín con salchiches">
+					</div>
+					<div class="item">
+						<label>Instrumento favoritu</label>
+						<input type="text" placeholder="Cajina de música">
+					</div>
 				</div>
 				<button class="cta">¡A La Fiesta!</button>
 			</form>
-			<button class="close">Cerrar</button>
+			<button class="close" onclick="hidePopup();">Cerrar</button>
 		</div>
 	</div>
-
+	<script type="text/javascript" src="script.js"></script>
 
 
 </body>
